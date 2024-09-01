@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .loginform {
+        width: 500px;
+        border: 2px solid green;
+        padding: 30px 10px;
+        border-radius: 20px;
+        margin: 0 auto;
+        background-color: #a1ffa185;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px
+      }
+      h1{
+        font-size: 40px;
+        text-align: center;
+        margin-top: -10px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      input {
+        width: 100%;
+        padding: 6px;
+      }
+      p {
+        color: red;
+      }
+     
+      button {
+        padding: 15px 0;
+        text-align: center;
+        display: block;
+        margin:auto;
+        width: 40%;
+        border: none;
+        border-radius: 30px;
+        background: #32CD32;
+      }
+      select{
+        font-size: 16px;
+        padding: 5px 0;
+        margin-bottom: 15px;
+      }
+      textarea{
+        width: 100%;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="loginform">
+      <h1>WELLCOME</h1>
+      <input type="text" placeholder="First Name" class="firstName" />
+      <p class="firstNameErr"></p>
+      <input type="text" placeholder="Last Name" class="lastName" />
+      <p class="lastNameErr"></p>
+      <input type="email" placeholder="Email" class="email" />
+      <p class="emailErr"></p>
+      <input type="number" placeholder="number" class="number" />
+      <p class="numberErr"></p>
+      <select class="options" name="options" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="option1">Account</option>
+          <option value="option2">TroubleShooting</option>
+          <option value="option3">Safety security</option>
+          <option value="option4">Login</option>
+        </select>
+        <p class="optionsErr"></p>
+      
+      <textarea name="" class="textarea" placeholder="Your report"></textarea>
+      <p class="textareaErr"></p>
+
+      
+        <button class="button">Submit</button>
+      
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
